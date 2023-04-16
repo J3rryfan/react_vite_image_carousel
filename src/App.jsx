@@ -1,14 +1,15 @@
-import { useState } from 'react'
+import { useState } from "react";
+import { Carousel } from "./components/Carousel";
+import { slides } from "./data/CarouselData";
 
-import './App.css'
+import "./App.css";
 
 function App() {
-  
   return (
     <div className="App">
-      Hello World
+      <Carousel data={slides} />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
